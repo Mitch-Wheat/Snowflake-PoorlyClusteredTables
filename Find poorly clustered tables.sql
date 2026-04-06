@@ -17,7 +17,7 @@ CREATE OR REPLACE PROCEDURE find_poorly_clustered_tables
 (
     min_partition_count  INT           DEFAULT 400,
     min_table_size_gb    INT           DEFAULT 1,
-    max_average_depth    DECIMAL(10,2) DEFAULT 10
+    max_average_depth    DECIMAL(10,2) DEFAULT 5
 )
 RETURNS VARCHAR
 LANGUAGE SQL
